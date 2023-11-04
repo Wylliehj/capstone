@@ -1,15 +1,23 @@
 'use strict';
 
 const express = require('express');
-
+const { authenticateJWT } = require('./middleware/auth');
 const app = express();
 const menuRoutes = require('./routes/menu');
+const contentRoutes = require('./routes/content');
+const cors = require('cors');
 
 const { NotFoundError } = require('./expressError');
 
+app.use(express.json())
+app.use(cors({
+    origin: 'http://localhost:3000'
+}))
 app.use('/menu', menuRoutes)
+app.use('/content', contentRoutes)
 
 app.use(function (req, res, next) {
+    console.log('in here')
     return next(new NotFoundError());
 })
 

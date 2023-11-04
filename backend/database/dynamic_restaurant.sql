@@ -16,3 +16,4 @@ CREATE DATABASE dynamic_restaurant_test;
 \connect dynamic_restaurant_test
 
 \i dynamic_restaurant_schema.sql
+\i dynamic_restaurant_seed.sql

@@ -1,0 +1,21 @@
+.title {
+    color: black;
+    text-align: center;
+}
+
+.title-div {
+    margin-top: 0px;
+    padding-top: 0px;
+    border-bottom: solid black;
+    width: 80%;
+    margin: auto;
+}
+
+.slogan {
+    color: black;
+    text-align: center;
+}
+
+.slogan-div {
+    padding-top: 1vh;
+}
