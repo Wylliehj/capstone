@@ -1,0 +1,25 @@
+.menu {
+    background-color: rgb(228, 223, 193);
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+}
+
+.menu-page {
+    background-color: rgb(228, 223, 193);
+    padding-top: 3vh;
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+    width: 15em;
+    vertical-align: top;
+    padding: 2px;
+}
+
+.menu-section h2 {
+    margin-bottom: 20px;
+}
+

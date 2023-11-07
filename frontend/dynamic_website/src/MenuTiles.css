@@ -1,0 +1,31 @@
+.menu-tile {
+    position: relative;
+    text-align: center;
+    color: black;
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    border: 2px solid black;
+}
+
+.menu-tile-image {
+    height: 180px;
+    width: 180px;
+    border: solid black 2px;
+}
+
+.menu-tiles{
+    display: flex;
+    position: relative;
+    width: 600px;
+    height: 200px;
+    margin-right: 50px;
+}

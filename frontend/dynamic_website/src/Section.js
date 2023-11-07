@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Section.css';
+import MenuTiles from './MenuTiles';
+import vibe from './static/vibe.PNG';
 
 const Section = ({content, section}) => {
     const [contentObj, setContentObj] = useState({})
@@ -23,22 +25,55 @@ const Section = ({content, section}) => {
         }
         addData()
     }, [])
-    console.log(contentObj)
-    console.log(headingObj)
-
-    return(
-        <div className='section' style={{color: 'black'}}>
-            <div className={headingObj.locId}>
-                <h4 className={headingObj.locId}>{`"${headingObj.content}"`}</h4>
+    if(section === 1){
+        return(
+            <div className='section' style={{color: 'black'}}>
+                <div className={headingObj.locId}>
+                    <h4 className={headingObj.locId}>{`"${headingObj.content}"`}</h4>
+                </div>
+                <div className='section-content'>
+                    <div className={contentObj.locId}>
+                        <p>{contentObj.content}</p>
+                    </div>
+                    <div className='vibe'>
+                        <img src={vibe}></img>
+                    </div>
+                </div>
             </div>
-            <div className={contentObj.locId}>
-                <p>{contentObj.content}</p>
+        )
+    }else if(section === 2){
+        return(
+            <div className='section' style={{color: 'black'}}>
+                <div className={headingObj.locId}>
+                    <h4 className={headingObj.locId}>{`"${headingObj.content}"`}</h4>
+                </div>
+                <div className='section-content'>
+                    <MenuTiles />
+                    <div className={contentObj.locId}>
+                        <p>{contentObj.content}</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img></img>
+        )
+    }else if(section === 3){
+        return(
+            <div className='section' style={{color: 'black'}}>
+                <div className={headingObj.locId}>
+                    <h4 className={headingObj.locId}>{`"${headingObj.content}"`}</h4>
+                </div>
+                <div className='section-content-3'>
+                    <div className={contentObj.locId}>
+                        <p>{contentObj.content}</p>
+                    </div>
+                </div>
+                <div className='button'>
+                    <form action='/about'>
+                        <button>Contact Us!</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default Section;

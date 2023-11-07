@@ -6,16 +6,21 @@
 .title-div {
     margin-top: 0px;
     padding-top: 0px;
-    border-bottom: solid black;
-    width: 80%;
     margin: auto;
 }
 
 .slogan {
     color: black;
+    border-bottom: solid black;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .slogan-div {
     padding-top: 1vh;
+}
+
+.home-page {
+    padding-left: 10%;
+    padding-right: 10%;
 }

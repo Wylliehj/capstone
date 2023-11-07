@@ -28,9 +28,9 @@ const Home = () => {
             <div className='slogan-div'>
                 <h4 className='slogan'>'When the best is what you want!'</h4>
             </div>
-            <Section content={content} section={1} />
-            <Section content={content} section={2} />
-            <Section content={content} section={3} />
+            <Section content={content} section={1} key={1} />
+            <Section content={content} section={2} key={2} />
+            <Section content={content} section={3} key={3} />
 
         </div>
     )

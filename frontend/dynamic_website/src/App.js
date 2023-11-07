@@ -3,8 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavBar from './NavBar'
 import Home from './Home';
 import MenuTiles from './MenuTiles';
-import MenuType from './MenuType';
 import AboutPage from './AboutPage'
+import MenuPage from './MenuPage';
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
               <MenuTiles />
             </Route>
             <Route exact path='/menu/:type'>
-              <MenuType />
+                <MenuPage />
             </Route>
             <Route exact path='/about'>
               <AboutPage />

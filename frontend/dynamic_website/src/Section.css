@@ -3,6 +3,45 @@
 }
 
 .home-s1 {
-    width: 20%;
+    width: 30%;
     align-content: left;
+    margin-right: 50px;
+}
+
+.home-h1 {
+    margin-bottom: 20px;
+}
+
+.home-s2 {
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    margin-right: 0px;
+}
+
+.section {
+    width: 80%;
+    margin: auto;
+}
+
+.section-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.section-content-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.vibe img{
+    width: 500px;
+    height: 200px;
+}
+
+.section .button {
+    justify-content: center;
+    display: flex;
 }
