@@ -13,12 +13,6 @@ CREATE TABLE text_content (
     PRIMARY KEY (loc_id, rest_id)
 );
 
-CREATE TABLE images (
-    loc_id TEXT,
-    rest_id INTEGER REFERENCES restaurant(id),
-    image_url TEXT,
-    PRIMARY KEY (loc_id, rest_id)
-);
 
 CREATE TABLE menu_items (
     loc_id TEXT,
@@ -38,17 +32,5 @@ CREATE TABLE hours (
     friday TEXT,
     saturday TEXT,
     sunday TEXT
-);
-
-CREATE TABLE users (
-    id SERIAL PRIMARY KEY,
-    username TEXT UNIQUE NOT NULL,
-    password TEXT NOT NULL
-);
-
-CREATE TABLE permissions (
-    user_id INTEGER REFERENCES users(id),
-    rest_id INTEGER REFERENCES restaurant(id),
-    admin_privileges TEXT
 );
 

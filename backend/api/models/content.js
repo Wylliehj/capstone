@@ -1,5 +1,5 @@
 const db = require('../db');
-const { BadRequestError, NotFoundError } = require('../expressError');
+const { BadRequestError } = require('../expressError');
 
 class Content {
     static async getText(restId, locId){

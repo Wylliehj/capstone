@@ -1,13 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import MenuItem from './MenuItem';
 
+/**All menu components act similarly, different components used because items
+ * on different menus have different formats and menu sections.
+ * 'content' is passed and used to map components to compArr, from there
+ * useEffect is used to determine what section a particular component should 
+ * belong in then saved to state.
+ */
+
 const LunchMenu = ({content}) => {
     const [appetizers, setAppetizers] = useState([])
     const [sides, setSides] = useState([])
     const [entrees, setEntrees] = useState([])
     const [sandwiches, setSandwiches] = useState([])
     let compArr = content.map(item => (
-        <MenuItem item={item} menu='lunch' />
+        <MenuItem item={item} menu='dinner' key={item.itemName} />
     ))
     useEffect(() => {
         function makeSections() {
@@ -30,7 +37,7 @@ const LunchMenu = ({content}) => {
 
     return (
         <div className='menu' style={{color: 'black'}}>
-            <h1 className='menu-title'>Lunch Menu</h1>
+            <h1 className='menu-title'>Dinner Menu</h1>
             <div className='menu-section'>
                 <h2 style={{color: 'black'}}>Appetizers</h2>
                 {appetizers}

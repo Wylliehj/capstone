@@ -1,14 +1,21 @@
+/* main {
+    background-color: rgb(228, 223, 193);
+} */
+
 .menu {
     background-color: rgb(228, 223, 193);
     margin-left: 5%;
     margin-right: 5%;
     box-shadow: 0 0 10px black;
     padding: 30px;
+    margin-bottom: 5%;
 }
 
 .menu-page {
     background-color: rgb(228, 223, 193);
     padding-top: 3vh;
+    height: 100vh;
+    overflow: auto;
 }
 
 .menu-item {

@@ -1,5 +1,9 @@
 import React from 'react';
 
+/** Accepts and item and a string pertaining to the menu type.
+ * Based on the menu type a different format is returned
+ */
+
 const MenuItem = ({item, menu}) => {
     if(menu === 'drinks'){
         return (

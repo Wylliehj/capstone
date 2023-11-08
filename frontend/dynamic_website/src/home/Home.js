@@ -1,7 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import Section from './Section';
 import './Home.css'
-import Api from './api';
+import Api from '../api';
+
+/**Component that loads and houses everything for the homepage. Content is split up into
+ * 'sections' and generated using a <Section />  component.
+ * useEffect used on initial render to make a request to API for content, content then passed
+ * to child components.
+ */
 
 const Home = () => {
     const [content, setContent] = useState([]);

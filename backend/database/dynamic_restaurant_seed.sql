@@ -5,17 +5,6 @@ VALUES ('The Bestaurant',
         '727-555-5555',
         '123 Main St Dunedin, FL 34698');
 
-INSERT INTO users (username, password)
-VALUES ('testread',
-        '$2b$12$AZH7virni5jlTTiGgEg4zu3lSvAw68qVEfSIOjJ3RqtbJbdW/Oi5q'),
-       ('testhide',
-        '$2b$12$AZH7virni5jlTTiGgEg4zu3lSvAw68qVEfSIOjJ3RqtbJbdW/Oi5q'),
-       ('testedit',
-        '$2b$12$AZH7virni5jlTTiGgEg4zu3lSvAw68qVEfSIOjJ3RqtbJbdW/Oi5q'),
-       ('testdelete',
-        '$2b$12$AZH7virni5jlTTiGgEg4zu3lSvAw68qVEfSIOjJ3RqtbJbdW/Oi5q'),
-       ('testadmin',
-        '$2b$12$AZH7virni5jlTTiGgEg4zu3lSvAw68qVEfSIOjJ3RqtbJbdW/Oi5q');
 
 INSERT INTO menu_items (loc_id, rest_id, item_name, item_desc, price)
 VALUES ('menu-lunch-dinner-appetizer-1',
@@ -36,7 +25,7 @@ VALUES ('menu-lunch-dinner-appetizer-1',
         ('menu-lunch-appetizer-4',
          1,
          'Home Fries',
-         'Diced potatoes fried and seasoning with in house flavors',
+         'Diced potatoes fried and seasoned with our in house flavors',
          4.99),
         ('menu-lunch-dinner-appetizer-5',
          1,
@@ -76,7 +65,7 @@ VALUES ('menu-lunch-dinner-appetizer-1',
         ('menu-dinner-sandwiches-4',
          1,
          'American Burger',
-         'A 6oz patty served on a brioche bun with tomat, onion and lettuce',
+         'A 6oz patty served on a brioche bun with tomato, onion and lettuce',
          13.99),
         ('menu-dinner-sandwiches-5',
          1,
@@ -208,12 +197,6 @@ VALUES (1,
         '10am - 12am',
         '9am - 12am',
         '9am - 10pm');
-
-INSERT INTO permissions (user_id, rest_id, admin_privileges)
-VALUES (1, 1, 'read'),
-       (2, 1, 'hide'),
-       (3, 1, 'edit'),
-       (4, 1, 'delete');
 
 INSERT INTO text_content (loc_id, rest_id, content)
 VALUES ('home-s1', 1, 'The Bestaurant has been established in Dunedin for the last 20 years and has continued to thrive thanks to our mission to satisfy every customer and our loyal and fanatical customers. Welcome to the Bestaurant, where the best is what you want.'),

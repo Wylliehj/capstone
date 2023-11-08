@@ -1,10 +1,14 @@
 import React from 'react';
-import drinks from './static/drinks.PNG';
-import lunch from './static/lunch.PNG';
-import dinner from './static/dinner.PNG';
+import drinks from '../static/drinks.PNG';
+import lunch from '../static/lunch.PNG';
+import dinner from '../static/dinner.PNG';
 import './MenuTiles.css';
 import {Link} from 'react-router-dom';
 
+/**Compenent used to display tiles for respective menus, shown on the home page and
+ * /menu route. The type of menu and format is static and should not change so 
+ * data and logic is hard coded.
+ */
 
 const MenuTiles = () => {
     let imageArr = [{image: drinks, name: 'Drinks', link: 'drinks'}, 

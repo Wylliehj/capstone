@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import {useParams} from 'react-router-dom';
-import Api from './api';
+import Api from '../api';
 import DrinkMenu from './DrinkMenu'
 import LunchMenu from './LunchMenu'
 import DinnerMenu from './DinnerMenu'
 import './Menu.css'
+
+/**Menu page generated from route /menu/:type. useParams used to determine
+ * which menu is being access and use in the useEffect function to request
+ * the API for all items from that menu. 'type' also used for conditionl logic
+ * to determine which menu component should be generated.
+ */
 
 const MenuPage = () => {
     const [content, setContent] = useState([]);

@@ -1,10 +1,14 @@
 import React, {useState, useEffect} from 'react'
-import Api from './api'
+import Api from '../api'
 import './About.css'
+
+/**Generated from /about route, useEffect triggers only on initial render and 
+ * requests api for 'hours' about restaurant. Bootstrap used to create a table for 
+ * these hours and other restaurant like location is statically generated.
+ */
 
 const AboutPage = () => {
     const [hours, setHours] = useState([])
-    const [content, setContent] = useState([])
 
     useEffect(() => {
         async function getInfo() {
@@ -21,7 +25,7 @@ const AboutPage = () => {
             </div>
             <div style={{color: 'black'}} className='section'>
                 <h3>Hours</h3>
-                <table class="table table-striped">
+                <table className="table table-striped">
                     <thead>
                         <tr scope='col'></tr>
                         <tr scope='col'></tr>

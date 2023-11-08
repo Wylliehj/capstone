@@ -1,7 +1,6 @@
 'use strict';
 
 const express = require('express');
-const { authenticateJWT } = require('./middleware/auth');
 const app = express();
 const menuRoutes = require('./routes/menu');
 const contentRoutes = require('./routes/content');
